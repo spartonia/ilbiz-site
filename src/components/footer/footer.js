@@ -26,10 +26,10 @@ export default function Footer() {
           </Text>
         </Box>
         <Box sx={styles.right}>
-          <Text as="p">Made with &#10084;&#65039; in Solna, Sweden</Text>
-          {/* <Link path="/" label="Home" />
-          <Link path="/" label="Adversite" />
-          <Link path="/" label="Supports" />
+          <Text as="p">Made with &#10084;&#65039; in Sweden </Text>
+          <Link path="/privacy" label="Privacy Policy" />
+          <Link path="/terms" label="Terms" />
+          {/* <Link path="/" label="Supports" />
           <Link path="/" label="Marketing" />
           <Link path="/" label="FAQ" /> */}
         </Box>
