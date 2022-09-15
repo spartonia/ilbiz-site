@@ -6,6 +6,7 @@ import Image from "components/image";
 import img1 from "assets/partner-1-1.png";
 import img2 from "assets/partner-1-2.png";
 import img3 from "assets/partner-1-3.png";
+import gpBadge from "assets/google-play-badge.png";
 
 // import bannerImg from "assets/banner-image-1-1.png";
 import bannerImg from "assets/pngegg.png";
@@ -19,10 +20,8 @@ const Banner = () => {
             <Heading as="h3">Hi! We are Ilbiz Studio.</Heading>
             <Text as="p">
               We are on a mission to bring the best quality mobile games to you.
-              <br />
-              Stay tuned..
             </Text>
-            <Box as="form" sx={styles.form}>
+            {/* <Box as="form" sx={styles.form}>
               <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
                 subscribe
               </Box>
@@ -35,19 +34,24 @@ const Banner = () => {
               <Button type="submit" sx={styles.form.button}>
                 Subscribe
               </Button>
-            </Box>
-            {/* <Box sx={styles.partner}>
-              <Text as="span">Sponsored by:</Text>
+            </Box> */}
+            <Box sx={styles.partner}>
               <Box as="div">
-                <Image src={img1} alt="" />
+                <a
+                  href='https://play.google.com/store/apps/details?id=com.ilbizGames.Dinqili&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+                  target="_blank"
+                  alt='Get it on Google Play'
+                >
+                  <Image src={gpBadge} alt="" />
+                </a>
               </Box>
-              <Box as="div">
+              {/* <Box as="div">
                 <Image src={img2} alt="" />
               </Box>
               <Box as="div">
                 <Image src={img3} alt="" />
-              </Box>
-            </Box> */}
+              </Box> */}
+            </Box>
           </Box>
           <Box sx={styles.image}>
             <Image src={bannerImg} alt="" />
@@ -138,6 +142,7 @@ const styles = {
       ml: ["10px", null, null, "20px", null, "30px"],
     },
     img: {
+      width: "50%",
       display: "flex",
     },
     span: {
