@@ -26,7 +26,7 @@ export default function Footer() {
           </Text>
         </Box>
         <Box sx={styles.right}>
-          <Text as="p">Made with &#10084;&#65039; in Sweden </Text>
+          <Text as="p">Made with &#10084;&#65039; in Antalya &ensp; </Text>
           <Link path="/privacy" label="Privacy Policy" />
           <Link path="/terms" label="Terms" />
           {/* <Link path="/" label="Supports" />
