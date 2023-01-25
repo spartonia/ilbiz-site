@@ -1,0 +1,39 @@
+.followUs {
+  p {
+    color: #000000;
+  }
+  .icons {
+    display: flex;
+  }
+}
+.socialIcon {
+  display: flex;
+  border: 1px solid #555555;
+  padding: 4px;
+  border-radius: 50%;
+  margin-left: 12px;
+  .socialIconSvg {
+    width: 24px;
+    height: 24px;
+    .socialIconPath {
+      fill: #555555;
+    }
+  }
+  &.white {
+    border: 1px solid #ffffff;
+    .socialIconSvg {
+      .socialIconPath {
+        fill: #ffffff;
+      }
+    }
+  }
+  &:hover {
+    background-color: #ff7e00;
+    border: 1px solid #ff7e00;
+    .socialIconSvg {
+      .socialIconPath {
+        fill: #ffffff;
+      }
+    }
+  }
+}

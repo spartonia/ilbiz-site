@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f4f2f2;
+
+  .button {
+    background-color: #ff7e00;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+    padding: 16px 32px;
+    width: fit-content;
+    cursor: pointer;
+  }
+
+  .textInput {
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    border-radius: 16px;
+    font-size: 1rem;
+    padding: 16px;
+    &:focus-visible {
+      border: 1px solid #09143e !important;
+    }
+  }
+
+  .content {
+    padding-bottom: 150px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 5%;
+    img {
+      width: 200px;
+      height: 70px;
+    }
+    nav {
+      padding-top: 35px;
+      display: flex;
+
+      a {
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #5b5b5b;
+        margin-left: 24px;
+        &.active,
+        &:hover {
+          color: #ff7e00;
+        }
+      }
+    }
+  }
+
+  footer {
+    position: relative;
+    .sendEmailBox {
+      width: 65vw;
+      height: 300px;
+      position: absolute;
+      background: #fff;
+      top: -150px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      padding: 36px;
+      box-sizing: border-box;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .title {
+        margin: 0 auto 32px auto;
+        color: #192c73;
+        font-size: 2rem;
+        font-weight: 800;
+      }
+      .row {
+        display: flex;
+        padding: 0 32px;
+        button {
+          width: 150px;
+        }
+        input {
+          margin-right: 16px;
+        }
+      }
+    }
+
+    .footer {
+      padding-top: 150px;
+      background: url("/assets/images/footer.svg");
+
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 5%;
+        padding-bottom: 80px;
+      }
+
+      .firstRow {
+        img {
+          width: 200px;
+          height: 70px;
+        }
+        a {
+          font-size: 1.25rem;
+          font-weight: 700;
+          text-decoration: none;
+          color: #ffffff;
+          margin-left: 24px;
+        }
+      }
+
+      .secondRow {
+        p {
+          font-size: 1.5rem;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
