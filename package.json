@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "^13.1.5",
+    "@trendyol-js/react-carousel": "^3.0.0",
     "eslint": "8.32.0",
     "eslint-config-next": "^13.1.5",
     "next": "^13.1.5",
@@ -19,6 +20,8 @@
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
-    "@types/react": "^18.0.27"
+    "@types/react": "^18.0.27",
+    "@types/video.js": "^7.3.50",
+    "video.js": "^7.21.1"
   }
 }

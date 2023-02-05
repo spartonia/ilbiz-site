@@ -51,7 +51,7 @@ export default function RootLayout({
     { label: " HOME", path: "/", targetSegment: null },
     { label: " GAMES", path: "/games", targetSegment: "games" },
     { label: " COMPANY", path: "/company", targetSegment: "company" },
-    { label: " ABOUT", path: "/about", targetSegment: "about" },
+    { label: " ABOUT", path: "#about", targetSegment: "about" },
     { label: " CONTACT", path: "/contact", targetSegment: "contact" },
   ];
 

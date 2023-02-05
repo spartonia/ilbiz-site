@@ -1,3 +1,5 @@
+"use client";
+
 import "./followUs.scss";
 import { FunctionComponent } from "react";
 import { Facebook, Instagram, Linkedin, Twitter } from "./SocialIcons";
@@ -17,13 +19,16 @@ const FollowUs: FunctionComponent<FollowUsProps> = ({
       <div className="icons">
         <div className={`socialIcon ${blackIcons ? "black" : "white"}`}>
           {Twitter}
-        </div>{" "}
+        </div>
+        <div className="space" />
         <div className={`socialIcon ${blackIcons ? "black" : "white"}`}>
           {Facebook}
-        </div>{" "}
+        </div>
+        <div className="space" />
         <div className={`socialIcon ${blackIcons ? "black" : "white"}`}>
           {Linkedin}
-        </div>{" "}
+        </div>
+        <div className="space" />
         <div className={`socialIcon ${blackIcons ? "black" : "white"}`}>
           {Instagram}
         </div>

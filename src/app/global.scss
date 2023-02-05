@@ -1,3 +1,5 @@
+$center-big-play-button: true;
+
 * {
   padding: 0;
   margin: 0;
@@ -24,12 +26,15 @@ body {
     border-radius: 16px;
     font-size: 1rem;
     padding: 16px;
+    box-sizing: border-box;
     &:focus-visible {
       border: 1px solid #09143e !important;
     }
   }
 
   .content {
+    box-sizing: border-box;
+    padding: 0 5%;
     padding-bottom: 150px;
   }
 
@@ -108,6 +113,7 @@ body {
       }
 
       .firstRow {
+        margin-top: 100px;
         img {
           width: 200px;
           height: 70px;
@@ -127,6 +133,33 @@ body {
           color: #ffffff;
         }
       }
+    }
+  }
+  .vjs-icon-placeholder {
+    display: none !important;
+  }
+  .vjs-controls-disabled .vjs-big-play-button {
+    display: block !important;
+  }
+  .vjs-big-play-button {
+    margin-top: -2.81666em !important;
+    margin-left: -1.5em !important;
+    background-color: transparent !important;
+    width: 150px !important;
+    height: 150px !important;
+    background-image: url("/assets/icons/play.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: 150px !important;
+    background-position: 50% calc(50% - 10px) !important;
+    border: none !important; // @stylint ignore
+    box-shadow: none !important; // @stylint ignore
+    &:before {
+      content: "" !important;
+      display: none !important;
+    }
+    &:hover {
+      background-color: transparent !important;
+      opacity: 0.9 !important;
     }
   }
 }

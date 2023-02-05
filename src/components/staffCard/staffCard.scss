@@ -1,0 +1,33 @@
+.staffCard {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  margin: 32px;
+  .image {
+    width: 100%;
+    height: inherit;
+    border-radius: 16px;
+    margin-bottom: 48px;
+  }
+  .title {
+    font-size: 1.75rem;
+    margin-bottom: 12px;
+  }
+  .description {
+    font-size: 1.25rem;
+  }
+  .row {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    svg {
+      margin: 0 8px;
+      height: 24px;
+      width: 24px;
+      path {
+        fill: #555555;
+      }
+    }
+  }
+}

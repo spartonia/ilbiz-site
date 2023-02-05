@@ -1,0 +1,23 @@
+.gameCard {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  margin: 32px;
+  .image {
+    width: 100%;
+    height: inherit;
+    border-radius: 16px;
+    margin-bottom: 48px;
+  }
+  a {
+    display: flex;
+    // width: 322px;
+    margin-bottom: 16px;
+    img {
+      width: 80%;
+      height: auto;
+      margin: auto;
+    }
+  }
+}
