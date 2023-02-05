@@ -1,6 +1,4 @@
 import React from "react";
-// // import videojs from "video.js";
-// import "video.js/dist/video-js.css";
 import VideoJS from "../../components/videojs/VideoJsPlayer";
 
 // Styles
@@ -22,19 +20,6 @@ const Company = () => {
       },
     ],
   };
-
-  //   const handlePlayerReady = (player) => {
-  //     playerRef.current = player;
-
-  //     // You can handle player events here, for example:
-  //     player.on("waiting", () => {
-  //     //   videojs.log("player is waiting");
-  //     });
-
-  //     player.on("dispose", () => {
-  //     //   videojs.log("player will dispose");
-  //     });
-  //   };
 
   return (
     <div className="section company">

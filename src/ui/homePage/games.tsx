@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from "react";
-import List from "../../components/list/list";
 import GameCard, { GameCardProps } from "../../components/gameCard/gameCard";
 import { Carousel } from "@trendyol-js/react-carousel";
 import Arrow from "../../components/list/arrow";
