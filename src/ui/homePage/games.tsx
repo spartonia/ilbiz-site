@@ -1,36 +1,40 @@
-import React, { FunctionComponent } from "react";
-import GameCard, { GameCardProps } from "../../components/gameCard/gameCard";
+"use client";
+import React, { FunctionComponent, useEffect, useState } from "react";
+import GameCard from "../../components/gameCard/gameCard";
 import { Carousel } from "@trendyol-js/react-carousel";
 import Arrow from "../../components/list/arrow";
+import { games } from "../../data/AppData";
+React.useLayoutEffect = React.useEffect;
 
 const GamesSection: FunctionComponent = () => {
-  const games: GameCardProps[] = [
-    {
-      imageUrl: "/assets/images/game1.png",
-      appStoreUrl: "sad",
-      googlePlayUrl: "sad",
-    },
-    {
-      imageUrl: "/assets/images/game2.png",
-      appStoreUrl: "sad",
-      googlePlayUrl: "sad",
-    },
-    {
-      imageUrl: "/assets/images/game3.png",
-      appStoreUrl: "sad",
-      googlePlayUrl: "sad",
-    },
-    {
-      imageUrl: "/assets/images/game3.png",
-      appStoreUrl: "sad",
-      googlePlayUrl: "sad",
-    },
-  ];
+  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 768);
+  const [isTablet, setIsTablet] = useState<boolean>(window.innerWidth <= 912);
+
+  function handleWindowSizeChange() {
+    setIsMobile(window.innerWidth <= 768);
+    setIsTablet(window.innerWidth <= 912);
+  }
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleWindowSizeChange);
+      window.addEventListener("orientationchange", handleWindowSizeChange);
+      window.addEventListener("load", handleWindowSizeChange);
+      window.addEventListener("reload", handleWindowSizeChange);
+    }
+    return () => {
+      if (typeof window !== "undefined") {
+        window.addEventListener("resize", handleWindowSizeChange);
+        window.addEventListener("orientationchange", handleWindowSizeChange);
+        window.addEventListener("load", handleWindowSizeChange);
+        window.addEventListener("reload", handleWindowSizeChange);
+      }
+    };
+  }, []);
 
   return (
     <div className="section games">
       <Carousel
-        show={3}
+        show={isTablet ? (isMobile ? 1 : 2) : 4}
         slide={1}
         rightArrow={
           <Arrow className="right" icon="/assets/icons/arrowRight.png" />
@@ -38,11 +42,12 @@ const GamesSection: FunctionComponent = () => {
         leftArrow={
           <Arrow className="left" icon="/assets/icons/arrowLeft.png" />
         }
+        responsive={true}
       >
         {games.map((game, i) => (
           <GameCard
             key={i}
-            imageUrl={game.imageUrl}
+            imageUrl={game.image}
             appStoreUrl={game.appStoreUrl}
             googlePlayUrl={game.googlePlayUrl}
           />

@@ -62,7 +62,16 @@ export default function RootLayout({
       </head>
       <body className={openSans.className}>
         <div className="navbar">
-          <Image src={textLogo} alt="Ilbiz" />
+          <Image className="logo" src={textLogo} alt="Ilbiz" />
+          <button>
+            <Image
+              className="menu"
+              src="/assets/icons/hamburger.png"
+              alt="menu"
+              width={48}
+              height={48}
+            />
+          </button>
           <nav>
             {links.map((l, i) => (
               <Link

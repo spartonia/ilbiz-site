@@ -1,67 +1,34 @@
 import { Carousel } from "@trendyol-js/react-carousel";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Arrow from "../../components/list/arrow";
-import StaffCard, {
-  StaffCardProps,
-} from "../../components/staffCard/staffCard";
+import StaffCard from "../../components/staffCard/staffCard";
+import { staff } from "../../data/AppData";
+React.useLayoutEffect = React.useEffect;
 
 const About = () => {
-  const staff: StaffCardProps[] = [
-    {
-      imageUrl: "/assets/images/teamMember.png",
-      name: "Soheil Qorbani",
-      jobTitle: "Full-stack developer",
-      twitterUrl: "sad",
-      facebookUrl: "sad",
-      linkedinUrl: "sad",
-      instagramUrl: "sad",
-    },
-    {
-      imageUrl: "/assets/images/teamMember.png",
-      name: "Soheil Qorbani",
-      jobTitle: "Full-stack developer",
-      twitterUrl: "sad",
-      facebookUrl: "sad",
-      linkedinUrl: "sad",
-      instagramUrl: "sad",
-    },
-    {
-      imageUrl: "/assets/images/teamMember.png",
-      name: "Soheil Qorbani",
-      jobTitle: "Full-stack developer",
-      twitterUrl: "sad",
-      facebookUrl: "sad",
-      linkedinUrl: "sad",
-      instagramUrl: "sad",
-    },
-    {
-      imageUrl: "/assets/images/teamMember.png",
-      name: "Soheil Qorbani",
-      jobTitle: "Full-stack developer",
-      twitterUrl: "sad",
-      facebookUrl: "sad",
-      linkedinUrl: "sad",
-      instagramUrl: "sad",
-    },
-    {
-      imageUrl: "/assets/images/teamMember.png",
-      name: "Soheil Qorbani",
-      jobTitle: "Full-stack developer",
-      twitterUrl: "sad",
-      facebookUrl: "sad",
-      linkedinUrl: "sad",
-      instagramUrl: "sad",
-    },
-    {
-      imageUrl: "/assets/images/teamMember.png",
-      name: "Soheil Qorbani",
-      jobTitle: "Full-stack developer",
-      twitterUrl: "sad",
-      facebookUrl: "sad",
-      linkedinUrl: "sad",
-      instagramUrl: "sad",
-    },
-  ];
+  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 768);
+  const [isTablet, setIsTablet] = useState<boolean>(window.innerWidth <= 912);
+
+  function handleWindowSizeChange() {
+    setIsMobile(window.innerWidth <= 768);
+    setIsTablet(window.innerWidth <= 912);
+  }
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleWindowSizeChange);
+      window.addEventListener("orientationchange", handleWindowSizeChange);
+      window.addEventListener("load", handleWindowSizeChange);
+      window.addEventListener("reload", handleWindowSizeChange);
+    }
+    return () => {
+      if (typeof window !== "undefined") {
+        window.addEventListener("resize", handleWindowSizeChange);
+        window.addEventListener("orientationchange", handleWindowSizeChange);
+        window.addEventListener("load", handleWindowSizeChange);
+        window.addEventListener("reload", handleWindowSizeChange);
+      }
+    };
+  }, []);
   return (
     <div className="section about">
       <h5 className="yellowTitle">We Have A Passion For Games!</h5>
@@ -71,7 +38,7 @@ const About = () => {
         for world-building.
       </p>
       <Carousel
-        show={4}
+        show={isTablet ? (isMobile ? 1 : 2) : 4}
         slide={1}
         rightArrow={
           <Arrow className="right" icon="/assets/icons/arrowRight.png" />
@@ -79,6 +46,7 @@ const About = () => {
         leftArrow={
           <Arrow className="left" icon="/assets/icons/arrowLeft.png" />
         }
+        responsive={true}
       >
         {staff.map((s, i) => (
           <StaffCard

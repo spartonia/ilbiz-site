@@ -31,7 +31,9 @@ const Company = () => {
         Our mission to entertain the world goes beyond gaming. Our teams create
         innovative and entertaining apps for everyday life.
       </p>
-      <VideoJS options={videoJsOptions} />
+      <div className="video">
+        <VideoJS options={videoJsOptions} />
+      </div>
     </div>
   );
 };

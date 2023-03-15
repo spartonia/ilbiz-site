@@ -4,20 +4,41 @@
   border-radius: 16px;
   box-sizing: border-box;
   margin: 32px;
+
   .image {
     width: 100%;
     height: inherit;
     border-radius: 16px;
-    margin-bottom: 48px;
+    margin-bottom: 15px;
   }
-  a {
+  .gameCardStoreList {
     display: flex;
-    // width: 322px;
-    margin-bottom: 16px;
-    img {
-      width: 80%;
-      height: auto;
-      margin: auto;
+    flex-direction: column;
+    align-items: center;
+    a {
+      text-decoration: none;
+      display: flex;
+      .gameStoreCardItem {
+        display: flex;
+        justify-content: center;
+        background-color: #e9e9e9;
+        color: #000;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 13px 10px;
+        line-height: normal;
+        margin: 8px;
+        width: 130px;
+        img {
+          margin-right: 8px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
     }
   }
 }

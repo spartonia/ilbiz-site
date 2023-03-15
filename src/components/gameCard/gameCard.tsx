@@ -25,12 +25,30 @@ const GameCard: FunctionComponent<GameCardProps> = ({
         width={350}
         height={350}
       />
-      <a href={appStoreUrl}>
-        <Image src={appStore} alt="App Store" />
-      </a>
-      <a href={googlePlayUrl}>
-        <Image src={googlePlay} alt="Google Play" />
-      </a>
+      <div className="gameCardStoreList">
+        <a href={appStoreUrl}>
+          <div className="gameStoreCardItem">
+            <Image
+              src="/assets/icons/testflight.png"
+              alt="testFlight"
+              width={24}
+              height={24}
+            />
+            <p>Test Flight</p>
+          </div>
+        </a>
+        <a href={googlePlayUrl}>
+          <div className="gameStoreCardItem">
+            <Image
+              src="/assets/icons/apk.png"
+              alt="testFlight"
+              width={24}
+              height={24}
+            />
+            <p>APK File</p>
+          </div>
+        </a>
+      </div>
     </div>
   );
 };

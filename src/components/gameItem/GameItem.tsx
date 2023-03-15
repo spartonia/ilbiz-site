@@ -35,18 +35,28 @@ const GameItem: FunctionComponent<GameItemProps> = ({
       </div>
       <div className="gameInfo">
         <p className="gameName">{name}</p>
-        <p className="gameDownload">{downloadNumber}</p>
+        {/* <p className="gameDownload">{downloadNumber}</p> */}
         <div className="gameStoreList">
           <a href={appStoreUrl}>
             <div className="gameStoreItem">
-              {Apple}
-              <p>App Store</p>
+              <Image
+                src="/assets/icons/testflight.png"
+                alt="testFlight"
+                width={24}
+                height={24}
+              />
+              <p>Test Flight</p>
             </div>
           </a>
           <a href={googlePlayUrl}>
             <div className="gameStoreItem">
-              {Google}
-              <p>Google Play</p>
+              <Image
+                src="/assets/icons/apk.png"
+                alt="testFlight"
+                width={24}
+                height={24}
+              />
+              <p>APK File</p>
             </div>
           </a>
         </div>
