@@ -1,0 +1,190 @@
+.homePage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    text-align: center;
+    color: #192c73;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 24px;
+  }
+  .yellowTitle {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ff7e00;
+    margin-bottom: 24px;
+  }
+  .description {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #5b5b5b;
+    padding: 0 15%;
+  }
+
+  .arrow {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    background-color: #ff7e00;
+    padding: 12px;
+    border-radius: 50%;
+    z-index: 2;
+    &.right {
+      right: -16px;
+    }
+    &.left {
+      left: -16px;
+    }
+  }
+
+  .section {
+    padding: 0 5%;
+    margin-bottom: 120px;
+  }
+
+  .entrance {
+    display: flex;
+    padding: 0 5%;
+    height: 100vh;
+    .column {
+      width: 50%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        color: #192c73;
+        font-weight: 700;
+        font-size: 5rem;
+      }
+      p {
+        font-size: 2rem;
+        color: #5b5b5b;
+      }
+    }
+    img {
+      width: 50%;
+      flex: 1;
+    }
+  }
+
+  .games {
+  }
+
+  .videoPlayer {
+    margin-top: 32px;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .video {
+      width: 70vw;
+    }
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .staffGrid {
+      width: 100%;
+      display: grid;
+      gap: 32px;
+      grid-template-columns: 50% 50%;
+      margin-top: 64px;
+    }
+  }
+
+  .contactUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .row {
+      width: 100%;
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-evenly;
+      .rowItem {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+      .socials {
+        padding-right: 5%;
+        .followUs {
+          margin-top: 32px;
+        }
+      }
+      .form {
+        background-color: #ffffff;
+        padding: 16px;
+        box-sizing: border-box;
+        border-radius: 16px;
+        input,
+        textarea {
+          width: 100%;
+          margin-bottom: 16px;
+        }
+        button {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  .homePage {
+    .entrance {
+      flex-direction: column;
+      .column {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .games {
+      margin-top: 60px;
+    }
+    .contactUs {
+      .row {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        button {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+  .about {
+    .staffGrid {
+      grid-template-columns: 100% !important;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .homePage {
+    .title {
+      font-size: 2rem;
+    }
+    .description {
+      font-size: 1rem;
+    }
+    .entrance {
+      .column {
+        h1 {
+          font-size: 3.5rem;
+        }
+      }
+    }
+  }
+}

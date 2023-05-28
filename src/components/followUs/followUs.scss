@@ -1,0 +1,44 @@
+.followUs {
+  p {
+    color: #000000;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .icons {
+    display: flex;
+    .space {
+      width: 12px;
+    }
+  }
+}
+.socialIcon {
+  display: flex;
+  border: 1px solid #555555;
+  padding: 4px;
+  border-radius: 50%;
+  .socialIconSvg {
+    width: 24px;
+    height: 24px;
+    .socialIconPath {
+      fill: #555555;
+    }
+  }
+  &.white {
+    border: 1px solid #ffffff;
+    .socialIconSvg {
+      .socialIconPath {
+        fill: #ffffff;
+      }
+    }
+  }
+  &:hover {
+    background-color: #ff7e00;
+    border: 1px solid #ff7e00;
+    .socialIconSvg {
+      .socialIconPath {
+        fill: #ffffff;
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+.gamesPage {
+  display: flex;
+  flex-direction: column;
+  .poster {
+    position: relative;
+    height: 65vh;
+    overflow: hidden;
+    .posterVideo {
+      width: -webkit-fill-available;
+      height: auto;
+    }
+    .posterTitle {
+      position: absolute;
+      bottom: 32px;
+      left: 24px;
+      color: white;
+    }
+  }
+  .games {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0;
+    padding: 0 5%;
+    .gamesTitle {
+      text-align: center;
+    }
+    .gamesDemo {
+      width: 100%;
+      display: flex;
+      margin-top: 32px;
+      align-items: center;
+      .gamesList {
+        flex: 2;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        row-gap: 16px;
+      }
+      .demoColumn {
+        display: flex;
+        flex-direction: column;
+        .demo {
+          position: relative;
+          height: fit-content;
+          .demoTitle {
+            padding: 16px 40px;
+            position: absolute;
+            bottom: 4px;
+            left: 4px;
+            right: 4px;
+            z-index: 3;
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+            border-radius: 39px;
+            height: 65px;
+            background: linear-gradient(
+              180deg,
+              rgba(15, 53, 145, 0) 0%,
+              rgba(255, 128, 0, 0.168627451) 57.81%
+            );
+            display: flex;
+            align-items: flex-end;
+          }
+          .phone {
+            position: relative;
+            width: 310px;
+            height: 632px;
+            z-index: 2;
+          }
+          .demoVideo {
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            object-fit: cover;
+            border-radius: 39px;
+          }
+        }
+        .gamesListMobile {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .gamesPage {
+    .poster {
+      height: auto;
+    }
+    .games {
+      .gamesDemo {
+        .gamesList {
+          display: none;
+        }
+        .demoColumn {
+          width: 100%;
+          .demo {
+            margin: auto;
+          }
+          .gamesListMobile {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
