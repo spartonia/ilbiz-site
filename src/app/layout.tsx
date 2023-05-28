@@ -1,15 +1,9 @@
 "use client";
-
-import Image from "next/image";
-import Link from "next/link";
-import { useSelectedLayoutSegment } from "next/navigation";
 import "./global.scss";
-import textLogo from "../../public/assets/images/textLogo.png";
-import textLogoWhite from "../../public/assets/images/textLogoWhite.png";
-
 import localFont from "@next/font/local";
-import FollowUs from "../components/followUs/followUs";
-import { useState } from "react";
+import Script from "next/script";
+import Header from "../components/header/header";
+import Footer from "../components/footer/footer";
 
 const openSans = localFont({
   src: [
@@ -46,107 +40,39 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const activeSegment = useSelectedLayoutSegment();
-
-  const links = [
-    { label: " HOME", path: "/", targetSegment: null },
-    { label: " GAMES", path: "/games", targetSegment: "games" },
-    { label: " COMPANY", path: "/company", targetSegment: "company" },
-    { label: " ABOUT", path: "#about", targetSegment: "about" },
-    { label: " CONTACT", path: "/contact", targetSegment: "contact" },
-  ];
-
-  const [showMenu, setShowMenu] = useState(false);
-
   return (
     <html lang="en">
       <head>
         <link rel="icon" type="image/png" href="/assets/icons/icon.png" />
+        {/* <!-- Google Tag Manager --> */}
+        <Script
+          id="google-tag-manager"
+          type="text/javascript"
+          async
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WLF3HBM');`,
+          }}
+        />
+        {/* End Google Tag Manager */}
       </head>
       <body className={openSans.className}>
-        {showMenu && (
-          <div className="mobileMenuBackdrop">
-            <div className="mobileMenu">
-              <button onClick={() => setShowMenu(false)}>
-                <Image
-                  className="menu"
-                  src="/assets/icons/close.png"
-                  alt="menu"
-                  width={24}
-                  height={24}
-                />
-              </button>
-              <nav>
-                {links.map((l, i) => (
-                  <Link
-                    className={
-                      activeSegment === l.targetSegment ? "active" : ""
-                    }
-                    key={i}
-                    href={l.path}
-                  >
-                    {l.label}
-                  </Link>
-                ))}
-              </nav>
-            </div>
-          </div>
-        )}
-        <div className="navbar">
-          <Image className="logo" src={textLogo} alt="Ilbiz" />
-          <button onClick={() => setShowMenu(true)}>
-            <Image
-              className="menu"
-              src="/assets/icons/hamburger.png"
-              alt="menu"
-              width={24}
-              height={24}
-            />
-          </button>
-          <nav>
-            {links.map((l, i) => (
-              <Link
-                className={activeSegment === l.targetSegment ? "active" : ""}
-                key={i}
-                href={l.path}
-              >
-                {l.label}
-              </Link>
-            ))}
-          </nav>
-        </div>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WLF3HBM"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
+        <Header />
         <div className="content">{children}</div>
-        <footer>
-          <div className="sendEmailBox">
-            <p className="title">To Get Update New Games!</p>
-            <div className="row">
-              <input
-                className="textInput"
-                type="text"
-                placeholder="Enter your email"
-              />
-              <button className="button" onClick={() => {}}>
-                Send
-              </button>
-            </div>
-          </div>
-          <div className="footer">
-            <div className="firstRow row">
-              <Image src={textLogoWhite} alt="Ilbiz" />
-              <nav>
-                {links.slice(1, 5).map((l, i) => (
-                  <Link key={i} href={l.path}>
-                    {l.label}
-                  </Link>
-                ))}
-              </nav>
-            </div>
-            <div className="secondRow row">
-              <p>Copyright © 2023 Ilbiz Studio. All rights reserved</p>
-              <FollowUs hasTitle={false} blackIcons={false} />
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

@@ -8,19 +8,10 @@ import {
 } from "../followUs/SocialIcons";
 import "./staffCard.scss";
 
-export interface StaffCardProps {
-  imageUrl: string;
-  name: string;
-  jobTitle: string;
-  twitterUrl?: string;
-  facebookUrl?: string;
-  linkedinUrl?: string;
-  instagramUrl?: string;
-}
-
-const StaffCard: FunctionComponent<StaffCardProps> = ({
+const StaffCard: FunctionComponent<Staff> = ({
   imageUrl,
   name,
+  description,
   jobTitle,
   twitterUrl,
   facebookUrl,
@@ -29,20 +20,26 @@ const StaffCard: FunctionComponent<StaffCardProps> = ({
 }) => {
   return (
     <div className="staffCard">
-      <Image
-        className="image"
-        src={imageUrl}
-        alt="staff"
-        width={350}
-        height={350}
-      />
-      <h5 className="title">{name}</h5>
-      <p className="description">{jobTitle}</p>
-      <div className="row">
-        {twitterUrl && <a href={twitterUrl}>{Twitter}</a>}
-        {facebookUrl && <a href={facebookUrl}>{Facebook}</a>}
-        {linkedinUrl && <a href={linkedinUrl}>{Linkedin}</a>}
-        {instagramUrl && <a href={instagramUrl}>{Instagram}</a>}
+      <div className="imageDiv">
+        <Image
+          className="image"
+          src={imageUrl}
+          alt="staff"
+          width={330}
+          height={330}
+        />
+        <div className="shadow" />
+        <div className="socials">
+          {twitterUrl && <a href={twitterUrl}>{Twitter}</a>}
+          {facebookUrl && <a href={facebookUrl}>{Facebook}</a>}
+          {linkedinUrl && <a href={linkedinUrl}>{Linkedin}</a>}
+          {instagramUrl && <a href={instagramUrl}>{Instagram}</a>}
+        </div>
+      </div>
+      <div className="info">
+        <h5 className="name">{name}</h5>
+        <p className="jobTitle">{jobTitle}</p>
+        <p className="description">{description}</p>
       </div>
     </div>
   );

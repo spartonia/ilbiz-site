@@ -1,17 +1,17 @@
 import Image from "next/image";
 import React, { FunctionComponent } from "react";
 import "./gameCard.scss";
-
-import appStore from "../../../public/assets/images/appStore.png";
-import googlePlay from "../../../public/assets/images/googlePlay.png";
+import Link from "next/link";
 
 export interface GameCardProps {
+  name: string;
   imageUrl: string;
   appStoreUrl: string;
   googlePlayUrl: string;
 }
 
 const GameCard: FunctionComponent<GameCardProps> = ({
+  name,
   imageUrl,
   appStoreUrl,
   googlePlayUrl,
@@ -25,8 +25,13 @@ const GameCard: FunctionComponent<GameCardProps> = ({
         width={350}
         height={350}
       />
+      <h3 className="name">{name}</h3>
       <div className="gameCardStoreList">
-        <a href={appStoreUrl}>
+        <Link
+          className={appStoreUrl === "" ? "disabled" : ""}
+          href={appStoreUrl}
+          target="_blank"
+        >
           <div className="gameStoreCardItem">
             <Image
               src="/assets/icons/testflight.png"
@@ -36,8 +41,12 @@ const GameCard: FunctionComponent<GameCardProps> = ({
             />
             <p>Test Flight</p>
           </div>
-        </a>
-        <a href={googlePlayUrl}>
+        </Link>
+        <Link
+          className={googlePlayUrl === "" ? "disabled" : ""}
+          href={googlePlayUrl}
+          target="_blank"
+        >
           <div className="gameStoreCardItem">
             <Image
               src="/assets/icons/apk.png"
@@ -47,7 +56,7 @@ const GameCard: FunctionComponent<GameCardProps> = ({
             />
             <p>APK File</p>
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   );

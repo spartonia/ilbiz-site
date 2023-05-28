@@ -7,8 +7,13 @@ import { games } from "../../data/AppData";
 React.useLayoutEffect = React.useEffect;
 
 const GamesSection: FunctionComponent = () => {
-  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 768);
-  const [isTablet, setIsTablet] = useState<boolean>(window.innerWidth <= 912);
+  const isSSR = typeof window === "undefined";
+  const [isMobile, setIsMobile] = useState<boolean>(
+    (isSSR ? 1200 : window?.innerWidth) <= 768
+  );
+  const [isTablet, setIsTablet] = useState<boolean>(
+    (isSSR ? 1200 : window?.innerWidth) <= 912
+  );
 
   function handleWindowSizeChange() {
     setIsMobile(window.innerWidth <= 768);
@@ -16,6 +21,8 @@ const GamesSection: FunctionComponent = () => {
   }
   useEffect(() => {
     if (typeof window !== "undefined") {
+      setIsTablet(window.innerWidth <= 912);
+      setIsMobile(window.innerWidth <= 768);
       window.addEventListener("resize", handleWindowSizeChange);
       window.addEventListener("orientationchange", handleWindowSizeChange);
       window.addEventListener("load", handleWindowSizeChange);
@@ -47,6 +54,7 @@ const GamesSection: FunctionComponent = () => {
         {games.map((game, i) => (
           <GameCard
             key={i}
+            name={game.name}
             imageUrl={game.image}
             appStoreUrl={game.appStoreUrl}
             googlePlayUrl={game.googlePlayUrl}

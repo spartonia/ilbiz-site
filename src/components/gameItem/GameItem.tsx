@@ -1,21 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FunctionComponent } from "react";
 
 import "./gameItem.scss";
-import { Apple, Google } from "./storeIcons";
 
-export interface GameItemProps {
-  name: string;
-  downloadNumber: string;
-  image: string;
-  video: string;
-  appStoreUrl: string;
-  googlePlayUrl: string;
-  onClick?: (g: any) => void;
-  selected?: boolean;
-}
-
-const GameItem: FunctionComponent<GameItemProps> = ({
+const GameItem: FunctionComponent<Game> = ({
   name,
   downloadNumber,
   image,
@@ -37,7 +26,11 @@ const GameItem: FunctionComponent<GameItemProps> = ({
         <p className="gameName">{name}</p>
         {/* <p className="gameDownload">{downloadNumber}</p> */}
         <div className="gameStoreList">
-          <a href={appStoreUrl}>
+          <Link
+            className={appStoreUrl === "" ? "disabled" : ""}
+            href={appStoreUrl}
+            target="_blank"
+          >
             <div className="gameStoreItem">
               <Image
                 src="/assets/icons/testflight.png"
@@ -47,8 +40,12 @@ const GameItem: FunctionComponent<GameItemProps> = ({
               />
               <p>Test Flight</p>
             </div>
-          </a>
-          <a href={googlePlayUrl}>
+          </Link>
+          <Link
+            className={googlePlayUrl === "" ? "disabled" : ""}
+            href={googlePlayUrl}
+            target="_blank"
+          >
             <div className="gameStoreItem">
               <Image
                 src="/assets/icons/apk.png"
@@ -58,7 +55,7 @@ const GameItem: FunctionComponent<GameItemProps> = ({
               />
               <p>APK File</p>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
