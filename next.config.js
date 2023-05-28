@@ -11,6 +11,12 @@ const nextConfig = {
         port: "",
         pathname: "**",
       },
+      {
+        protocol: "https",
+        hostname: "doc-0c-1s-docs.googleusercontent.com",
+        port: "",
+        pathname: "**",
+      },
     ],
   },
 };
