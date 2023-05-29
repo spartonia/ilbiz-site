@@ -124,9 +124,9 @@ export const staff: Staff[] = [
     description:
       "Committed and motivated junior developer, passionate about learning to code and other aspects of game development. A responsible individual who contributes to the implementation of concepts, knowledge, and methodologies",
     jobTitle: "Unity Game Developer",
+    linkedinUrl: "https://www.linkedin.com/in/ayda-sourati",
     // twitterUrl: "",
     // facebookUrl: "",
-    // linkedinUrl: "",
     // instagramUrl: "",
   },
 ];
