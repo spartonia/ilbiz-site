@@ -3,7 +3,7 @@ import FollowUs from "../../components/followUs/followUs";
 
 const ContactUs = () => {
   return (
-    <div className="section contactUs">
+    <div className="section contactUs" id="contactUs">
       <h1 className="title">Contact Us</h1>
       <p className="description">
         Stay in touch with us.Send us an email or start a conversation by

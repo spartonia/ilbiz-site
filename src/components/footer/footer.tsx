@@ -36,7 +36,7 @@ const Footer: FunctionComponent = () => {
         </div>
         <div className="secondRow row">
           <p>Copyright © 2023 Ilbiz Studio. All rights reserved</p>
-          <FollowUs hasTitle={false} blackIcons={false} />
+          <FollowUs hasTitle={false} />
         </div>
       </div>
     </footer>

@@ -6,7 +6,7 @@ React.useLayoutEffect = React.useEffect;
 
 const About = () => {
   return (
-    <div className="section about">
+    <div className="section about" id="about">
       <h5 className="yellowTitle">We Have A Passion For Games!</h5>
       <h1 className="title">Great Game Made By Passionate People</h1>
       <p className="description">
@@ -25,6 +25,9 @@ const About = () => {
             linkedinUrl={s.linkedinUrl}
             facebookUrl={s.facebookUrl}
             instagramUrl={s.instagramUrl}
+            youtubeUrl={s.youtubeUrl}
+            telegramUrl={s.telegramUrl}
+            githubUrl={s.githubUrl}
           />
         ))}
       </div>

@@ -6,32 +6,20 @@ import { Facebook, Instagram, Linkedin, Twitter } from "./SocialIcons";
 
 interface FollowUsProps {
   hasTitle?: boolean;
-  blackIcons?: boolean;
 }
 
-const FollowUs: FunctionComponent<FollowUsProps> = ({
-  hasTitle = true,
-  blackIcons = true,
-}) => {
+const FollowUs: FunctionComponent<FollowUsProps> = ({ hasTitle = true }) => {
   return (
     <div className="followUs">
       {hasTitle && <p>Follow Us</p>}
       <div className="icons">
-        <div className={`socialIcon ${blackIcons ? "black" : "white"}`}>
-          {Twitter}
-        </div>
+        {Twitter}
         <div className="space" />
-        <div className={`socialIcon ${blackIcons ? "black" : "white"}`}>
-          {Facebook}
-        </div>
+        {Facebook}
         <div className="space" />
-        <div className={`socialIcon ${blackIcons ? "black" : "white"}`}>
-          {Linkedin}
-        </div>
+        {Linkedin}
         <div className="space" />
-        <div className={`socialIcon ${blackIcons ? "black" : "white"}`}>
-          {Instagram}
-        </div>
+        {Instagram}
       </div>
     </div>
   );
