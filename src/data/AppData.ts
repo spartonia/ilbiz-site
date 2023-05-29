@@ -11,8 +11,7 @@ export const games: Game[] = [
   {
     name: "Color Side",
     downloadNumber: "+120M",
-    image:
-      "https://drive.google.com/uc?export=view&id=154hf9in0tL70JRbAgZhEyeDTmcfp5WS_",
+    image: "/assets/images/games/ColorSide.jpg",
     video:
       "https://drive.google.com/uc?export=view&id=1xRRMYtNUzWyWFEfDBDL6bi9939yISb9C",
     appStoreUrl: "https://testflight.apple.com/join/vNx4DPCo",
@@ -22,8 +21,7 @@ export const games: Game[] = [
   {
     name: "Tavshan",
     downloadNumber: "+120M",
-    image:
-      "https://drive.google.com/uc?export=view&id=1XqaTk8I6-y5CnqUVOFvXZPMHc2Yxe1EE",
+    image: "/assets/images/games/Tavshan.jpg",
     video:
       "https://drive.google.com/uc?export=view&id=1uoZLlrz2gSXDN6KsyzSbmieKYGW2o3v4",
     appStoreUrl: "https://testflight.apple.com/join/EdpbQ05G",
@@ -33,8 +31,7 @@ export const games: Game[] = [
   {
     name: "Wicked Souls",
     downloadNumber: "+120M",
-    image:
-      "https://drive.google.com/uc?export=view&id=1Na-CONBhdSyPgqhcVG2cY-8ISo7UDyDG",
+    image: "/assets/images/games/WickedSouls.jpg",
     video:
       "https://drive.google.com/uc?export=view&id=1vkSuwGcMtWrVdrNPiRUrDgqXO82uv_gP",
     appStoreUrl: "https://testflight.apple.com/join/fpM2CqUc",
@@ -43,8 +40,7 @@ export const games: Game[] = [
   {
     name: "Space Meteoroid",
     downloadNumber: "+120M",
-    image:
-      "https://drive.google.com/uc?export=view&id=1J6EQSmvtJMNVsWwd6-iyPiA0rvoukV5F",
+    image: "/assets/images/games/SpaceMeteoroid.jpg",
     video:
       "https://drive.google.com/uc?export=view&id=1v3jVo2H0YXtSovCD2oFwwNxYdFpiw6y3",
     appStoreUrl: "https://testflight.apple.com/join/QfsEKHTn",
@@ -54,8 +50,7 @@ export const games: Game[] = [
   {
     name: "Off Balance Ball",
     downloadNumber: "+120M",
-    image:
-      "https://drive.google.com/uc?export=view&id=1NxLvaPeeYF748gf64A5wmSnrb681jgif",
+    image: "/assets/images/games/OffBalanceBall.jpg",
     video:
       "https://drive.google.com/uc?export=view&id=1dniitP6qNSjP-cDihwOzl8iiSEmO-fKv",
     appStoreUrl: "",
@@ -65,8 +60,7 @@ export const games: Game[] = [
   {
     name: "ColorLee",
     downloadNumber: "+120M",
-    image:
-      "https://drive.google.com/uc?export=view&id=1-_mIZO4DNzuboj69rvXsmNMDluXV0RPW",
+    image: "/assets/images/games/ColorLee.jpg",
     video:
       "https://drive.google.com/uc?export=view&id=12WvMErF_92RQOx5P_8pqpu1jJHia2lOZ",
     appStoreUrl: "https://testflight.apple.com/join/8cSqLUKJ",
@@ -76,8 +70,7 @@ export const games: Game[] = [
   {
     name: "ReColor",
     downloadNumber: "+120M",
-    image:
-      "https://drive.google.com/uc?export=view&id=1_EOemPXnnrt6mbYDklLbM-Ae-rtH-63p",
+    image: "/assets/images/games/ReColor.png",
     video:
       "https://drive.google.com/uc?export=view&id=1A-Af80C5oUlIELmjLC8Zbd9yYRbGT4J1",
     appStoreUrl: "",
@@ -88,7 +81,7 @@ export const games: Game[] = [
 
 export const staff: Staff[] = [
   {
-    imageUrl: "/assets/images/milad_seyfi.jpg",
+    imageUrl: "/assets/images/staff/milad_seyfi.jpg",
     name: "Milad Seifi",
     description:
       "Milad can turn even the most complex ideas into a reality. He has a deep understanding of game engines and development tools, and is constantly working to improve our workflows.",
@@ -99,7 +92,7 @@ export const staff: Staff[] = [
     // instagramUrl: "",
   },
   {
-    imageUrl: "/assets/images/teamMember.png",
+    imageUrl: "/assets/images/staff/maleAvatar.jpg",
     name: "Amir Hosein Fatemi",
     description:
       "With over 5 years of experience in the game development industry, Amir is responsible for overseeing the development team and ensuring that our games are optimized for performance and stability.",
@@ -110,7 +103,7 @@ export const staff: Staff[] = [
     // instagramUrl: "",
   },
   {
-    imageUrl: "/assets/images/said_gozali.jpg",
+    imageUrl: "/assets/images/staff/said_gozali.jpg",
     name: "Saeed Gozali",
     description:
       "Saeed brings a wealth of knowledge and creative vision to our studio. He is passionate about designing games that are both fun and challenging.",
@@ -121,7 +114,7 @@ export const staff: Staff[] = [
     // instagramUrl: "",
   },
   {
-    imageUrl: "/assets/images/majid_partoniya.jpg",
+    imageUrl: "/assets/images/staff/majid_partoniya.jpg",
     name: "Majid Partonia",
     description:
       "Majid creates and implements 2D and 3D game assets using industry-standard software like Maya, Photoshop, and Illustrator.He also edits audio and text.",
@@ -132,7 +125,7 @@ export const staff: Staff[] = [
     // instagramUrl: "",
   },
   {
-    imageUrl: "/assets/images/teamMember.png",
+    imageUrl: "/assets/images/staff/femaleAvatar.jpg",
     name: "Ayda Soorati",
     description:
       "Committed and motivated junior developer, passionate about learning to code and other aspects of game development. A responsible individual who contributes to the implementation of concepts, knowledge, and methodologies",
