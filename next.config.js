@@ -4,14 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "drive.google.com",
-        port: "",
-        pathname: "**",
-      },
-    ],
+    domains: ["drive.google.com", "doc-0c-1s-docs.googleusercontent.com"],
   },
 };
 
