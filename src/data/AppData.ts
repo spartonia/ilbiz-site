@@ -101,7 +101,7 @@ export const staff: Staff[] = [
     name: "Saeed Gozali",
     description:
       "Saeed brings a wealth of knowledge and creative vision to our studio. He is passionate about designing games that are both fun and challenging.",
-    jobTitle: "Designer",
+    jobTitle: "UI/UX Designer",
     // linkedinUrl: "",
     // twitterUrl: "",
     // facebookUrl: "",
@@ -125,6 +125,7 @@ export const staff: Staff[] = [
       "Committed and motivated junior developer, passionate about learning to code and other aspects of game development. A responsible individual who contributes to the implementation of concepts, knowledge, and methodologies",
     jobTitle: "Unity Game Developer",
     linkedinUrl: "https://www.linkedin.com/in/ayda-sourati",
+    githubUrl: "https://github.com/AydaSourati",
     // twitterUrl: "",
     // facebookUrl: "",
     // instagramUrl: "",
