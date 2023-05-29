@@ -7,6 +7,9 @@ type Staff = {
   facebookUrl?: string;
   linkedinUrl?: string;
   instagramUrl?: string;
+  youtubeUrl?: string;
+  githubUrl?: string;
+  telegramUrl?: string;
 };
 
 type Game = {

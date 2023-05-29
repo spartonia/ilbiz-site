@@ -22,7 +22,7 @@ const Company = () => {
   };
 
   return (
-    <div className="section company">
+    <div className="section company" id="company">
       <h5 className="yellowTitle">Imagination, Innovation, Incarnation</h5>
       <h1 className="title">
         Our Mission Is To Create Virtual Worlds More Meaningful Than Real Life

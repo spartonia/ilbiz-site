@@ -2,9 +2,9 @@
 export const links: Links[] = [
   { label: " HOME", path: "/", targetSegment: null },
   { label: " GAMES", path: "/games", targetSegment: "games" },
-  { label: " COMPANY", path: "/company", targetSegment: "company" },
+  { label: " COMPANY", path: "#company", targetSegment: "company" },
   { label: " ABOUT", path: "#about", targetSegment: "about" },
-  { label: " CONTACT", path: "/contact", targetSegment: "contact" },
+  { label: " CONTACT", path: "#contactUs", targetSegment: "contact" },
 ];
 
 export const games: Game[] = [
@@ -85,7 +85,7 @@ export const staff: Staff[] = [
     name: "Milad Seifi",
     description:
       "Milad can turn even the most complex ideas into a reality. He has a deep understanding of game engines and development tools, and is constantly working to improve our workflows.",
-    jobTitle: "rogrammer and Product Manager",
+    jobTitle: "Programmer and Product Manager",
     // twitterUrl: "",
     // facebookUrl: "",
     // linkedinUrl: "",
@@ -95,12 +95,13 @@ export const staff: Staff[] = [
     imageUrl: "/assets/images/staff/maleAvatar.jpg",
     name: "Amir Hosein Fatemi",
     description:
-      "With over 5 years of experience in the game development industry, Amir is responsible for overseeing the development team and ensuring that our games are optimized for performance and stability.",
+      "Amir is a Unity programmer with over 7 years of experience and extensive mastery in C# programming for Unity. My expertise lies in various aspects of Unity for developing augmented reality and online games. From environment lighting to game logic design, I have a comprehensive command of Unity.",
     jobTitle: "Unity Game Developer",
-    // twitterUrl: "",
-    // facebookUrl: "",
-    // linkedinUrl: "",
-    // instagramUrl: "",
+    youtubeUrl: "https://youtube.com/@AmirUnity",
+    linkedinUrl: "https://www.linkedin.com/in/fatemiamir",
+    instagramUrl: "https://instagram.com/unity.tutorials",
+    telegramUrl: "https://t.me/AmirUnityOfficial",
+    githubUrl: "https://github.com/amirhoseynfatemi",
   },
   {
     imageUrl: "/assets/images/staff/said_gozali.jpg",
@@ -108,9 +109,9 @@ export const staff: Staff[] = [
     description:
       "Saeed brings a wealth of knowledge and creative vision to our studio. He is passionate about designing games that are both fun and challenging.",
     jobTitle: "Designer",
+    // linkedinUrl: "",
     // twitterUrl: "",
     // facebookUrl: "",
-    // linkedinUrl: "",
     // instagramUrl: "",
   },
   {
@@ -129,7 +130,7 @@ export const staff: Staff[] = [
     name: "Ayda Soorati",
     description:
       "Committed and motivated junior developer, passionate about learning to code and other aspects of game development. A responsible individual who contributes to the implementation of concepts, knowledge, and methodologies",
-    jobTitle: "Junior Unity Game Developer",
+    jobTitle: "Unity Game Developer",
     // twitterUrl: "",
     // facebookUrl: "",
     // linkedinUrl: "",
