@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["drive.google.com", "*.googleusercontent.com"],
+    domains: ["drive.google.com", "doc-0c-1s-docs.googleusercontent.com"],
   },
 };
 
