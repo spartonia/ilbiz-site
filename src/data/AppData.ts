@@ -12,8 +12,7 @@ export const games: Game[] = [
     name: "Color Side",
     downloadNumber: "+120M",
     image: "/assets/images/games/ColorSide.jpg",
-    video:
-      "https://drive.google.com/uc?export=view&id=1xRRMYtNUzWyWFEfDBDL6bi9939yISb9C",
+    video: "/assets/videos/games/ColorSide.mp4",
     appStoreUrl: "https://testflight.apple.com/join/vNx4DPCo",
     googlePlayUrl:
       "https://drive.google.com/file/d/1x12vUt-y4awIhImfqE-TXuuvzC9D-gOs/view?usp=sharing",
@@ -22,8 +21,7 @@ export const games: Game[] = [
     name: "Tavshan",
     downloadNumber: "+120M",
     image: "/assets/images/games/Tavshan.jpg",
-    video:
-      "https://drive.google.com/uc?export=view&id=1uoZLlrz2gSXDN6KsyzSbmieKYGW2o3v4",
+    video: "/assets/videos/games/Tavshan.mp4",
     appStoreUrl: "https://testflight.apple.com/join/EdpbQ05G",
     googlePlayUrl:
       "https://drive.google.com/file/d/1IlkGdY_aRFMmiS2p0RLRaKqA_vVTpJf2/view?usp=sharing",
@@ -32,8 +30,7 @@ export const games: Game[] = [
     name: "Wicked Souls",
     downloadNumber: "+120M",
     image: "/assets/images/games/WickedSouls.jpg",
-    video:
-      "https://drive.google.com/uc?export=view&id=1vkSuwGcMtWrVdrNPiRUrDgqXO82uv_gP",
+    video: "/assets/videos/games/WickedSouls.mp4",
     appStoreUrl: "https://testflight.apple.com/join/fpM2CqUc",
     googlePlayUrl: "",
   },
@@ -41,8 +38,7 @@ export const games: Game[] = [
     name: "Space Meteoroid",
     downloadNumber: "+120M",
     image: "/assets/images/games/SpaceMeteoroid.jpg",
-    video:
-      "https://drive.google.com/uc?export=view&id=1v3jVo2H0YXtSovCD2oFwwNxYdFpiw6y3",
+    video: "/assets/videos/games/SpaceMeteoroid.mp4",
     appStoreUrl: "https://testflight.apple.com/join/QfsEKHTn",
     googlePlayUrl:
       "https://drive.google.com/file/d/1nbfQaWf0YEAX9Z3a7WXaTcJMExH1dsek/view?usp=sharing",
@@ -51,8 +47,7 @@ export const games: Game[] = [
     name: "Off Balance Ball",
     downloadNumber: "+120M",
     image: "/assets/images/games/OffBalanceBall.jpg",
-    video:
-      "https://drive.google.com/uc?export=view&id=1dniitP6qNSjP-cDihwOzl8iiSEmO-fKv",
+    video: "/assets/videos/games/OffBalanceBall.mp4",
     appStoreUrl: "",
     googlePlayUrl:
       "https://drive.google.com/file/d/1O-bAm6uYPvg2MV-sp7plrjMxoM9x2N8O/view?usp=sharing",
@@ -61,8 +56,7 @@ export const games: Game[] = [
     name: "ColorLee",
     downloadNumber: "+120M",
     image: "/assets/images/games/ColorLee.jpg",
-    video:
-      "https://drive.google.com/uc?export=view&id=12WvMErF_92RQOx5P_8pqpu1jJHia2lOZ",
+    video: "/assets/videos/games/ColorLee.mp4",
     appStoreUrl: "https://testflight.apple.com/join/8cSqLUKJ",
     googlePlayUrl:
       "https://drive.google.com/file/d/18n1eT239qCebC_-CdbQeO4E0KV0QNQIs/view?usp=sharing",
@@ -71,8 +65,7 @@ export const games: Game[] = [
     name: "ReColor",
     downloadNumber: "+120M",
     image: "/assets/images/games/ReColor.png",
-    video:
-      "https://drive.google.com/uc?export=view&id=1A-Af80C5oUlIELmjLC8Zbd9yYRbGT4J1",
+    video: "/assets/videos/games/ReColor.mp4",
     appStoreUrl: "",
     googlePlayUrl:
       "https://drive.google.com/file/d/1DetJKBt-IwX-YfI44kCiV5NHpLGGCxWC/view?usp=sharing",
