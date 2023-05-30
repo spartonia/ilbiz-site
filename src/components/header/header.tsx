@@ -5,7 +5,7 @@ import { useSelectedLayoutSegment } from "next/navigation";
 import { FunctionComponent, useState } from "react";
 import { links } from "../../data/AppData";
 
-import textLogo from "../../../public/assets/images/textLogo.png";
+import logo from "../../../public/assets/icons/logo.png";
 
 const Header: FunctionComponent = () => {
   const activeSegment = useSelectedLayoutSegment();
@@ -40,7 +40,12 @@ const Header: FunctionComponent = () => {
         </div>
       )}
       <div className="navbar">
-        <Image className="logo" src={textLogo} alt="Ilbiz" />
+        <div className="logoRow">
+          <Image className="logo" src={logo} alt="Ilbiz" />
+          <p className="logoTitle">
+            <span>iLBiZ</span> STUDiO
+          </p>
+        </div>
         <button onClick={() => setShowMenu(true)}>
           <Image
             className="menu"

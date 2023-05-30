@@ -79,10 +79,8 @@ export const staff: Staff[] = [
     description:
       "Milad can turn even the most complex ideas into a reality. He has a deep understanding of game engines and development tools, and is constantly working to improve our workflows.",
     jobTitle: "Programmer and Product Manager",
-    // twitterUrl: "",
-    // facebookUrl: "",
-    // linkedinUrl: "",
-    // instagramUrl: "",
+    githubUrl: "https://github.com/seifimilad",
+    linkedinUrl: "http://linkedin.com/in/milad-seifi-8453a8211",
   },
   {
     imageUrl: "/assets/images/staff/maleAvatar.jpg",
@@ -102,10 +100,6 @@ export const staff: Staff[] = [
     description:
       "Saeed brings a wealth of knowledge and creative vision to our studio. He is passionate about designing games that are both fun and challenging.",
     jobTitle: "UI/UX Designer",
-    // linkedinUrl: "",
-    // twitterUrl: "",
-    // facebookUrl: "",
-    // instagramUrl: "",
   },
   {
     imageUrl: "/assets/images/staff/majid_partoniya.jpg",
@@ -113,10 +107,6 @@ export const staff: Staff[] = [
     description:
       "Majid creates and implements 2D and 3D game assets using industry-standard software like Maya, Photoshop, and Illustrator.He also edits audio and text.",
     jobTitle: "Unity Designer",
-    // twitterUrl: "",
-    // facebookUrl: "",
-    // linkedinUrl: "",
-    // instagramUrl: "",
   },
   {
     imageUrl: "/assets/images/staff/femaleAvatar.jpg",
@@ -126,8 +116,5 @@ export const staff: Staff[] = [
     jobTitle: "Unity Game Developer",
     linkedinUrl: "https://www.linkedin.com/in/ayda-sourati",
     githubUrl: "https://github.com/AydaSourati",
-    // twitterUrl: "",
-    // facebookUrl: "",
-    // instagramUrl: "",
   },
 ];
