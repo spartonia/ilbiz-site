@@ -5,6 +5,8 @@ export const links: Links[] = [
   { label: " COMPANY", path: "#company", targetSegment: "company" },
   { label: " ABOUT", path: "#about", targetSegment: "about" },
   { label: " CONTACT", path: "#contactUs", targetSegment: "contact" },
+  { label: "PRIVACY POLICY", path: "/privacy", targetSegment: "privacy" },
+  { label: "TERMS", path: "/terms", targetSegment: "terms" },
 ];
 
 export const games: Game[] = [
